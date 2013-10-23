@@ -38,6 +38,8 @@
 	<string>5A1413</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>10.8</string>
+	<key>LSUIElement</key>
+	<true/>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2013 Aaron Morais. All rights reserved.</string>
 	<key>NSMainNibFile</key>
