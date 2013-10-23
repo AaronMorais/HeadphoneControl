@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		934BF05B1817986A00010D82 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934BF05A1817986A00010D82 /* Cocoa.framework */; };
+		934BF0651817986A00010D82 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 934BF0631817986A00010D82 /* InfoPlist.strings */; };
+		934BF0671817986A00010D82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 934BF0661817986A00010D82 /* main.m */; };
+		934BF06B1817986A00010D82 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 934BF0691817986A00010D82 /* Credits.rtf */; };
+		934BF06E1817986A00010D82 /* HPCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 934BF06D1817986A00010D82 /* HPCAppDelegate.m */; };
+		934BF0711817986A00010D82 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 934BF06F1817986A00010D82 /* MainMenu.xib */; };
+		934BF0731817986A00010D82 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 934BF0721817986A00010D82 /* Images.xcassets */; };
+		934BF07A1817986A00010D82 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934BF0791817986A00010D82 /* XCTest.framework */; };
+		934BF07B1817986A00010D82 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934BF05A1817986A00010D82 /* Cocoa.framework */; };
+		934BF0831817986A00010D82 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 934BF0811817986A00010D82 /* InfoPlist.strings */; };
+		934BF0851817986A00010D82 /* HeadphoneControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 934BF0841817986A00010D82 /* HeadphoneControlTests.m */; };
+		934BF09018179AAC00010D82 /* HPCAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 934BF08F18179AAC00010D82 /* HPCAppController.m */; };
+		934BF09218179AC300010D82 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 934BF09118179AC300010D82 /* icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		934BF07C1817986A00010D82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 934BF04F1817986A00010D82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 934BF0561817986A00010D82;
+			remoteInfo = HeadphoneControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		934BF0571817986A00010D82 /* HeadphoneControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadphoneControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		934BF05A1817986A00010D82 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		934BF05D1817986A00010D82 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		934BF05E1817986A00010D82 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		934BF05F1817986A00010D82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		934BF0621817986A00010D82 /* HeadphoneControl-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HeadphoneControl-Info.plist"; sourceTree = "<group>"; };
+		934BF0641817986A00010D82 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		934BF0661817986A00010D82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		934BF0681817986A00010D82 /* HeadphoneControl-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HeadphoneControl-Prefix.pch"; sourceTree = "<group>"; };
+		934BF06A1817986A00010D82 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		934BF06C1817986A00010D82 /* HPCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPCAppDelegate.h; sourceTree = "<group>"; };
+		934BF06D1817986A00010D82 /* HPCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPCAppDelegate.m; sourceTree = "<group>"; };
+		934BF0701817986A00010D82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		934BF0721817986A00010D82 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		934BF0781817986A00010D82 /* HeadphoneControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeadphoneControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		934BF0791817986A00010D82 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		934BF0801817986A00010D82 /* HeadphoneControlTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HeadphoneControlTests-Info.plist"; sourceTree = "<group>"; };
+		934BF0821817986A00010D82 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		934BF0841817986A00010D82 /* HeadphoneControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeadphoneControlTests.m; sourceTree = "<group>"; };
+		934BF08E18179AAC00010D82 /* HPCAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPCAppController.h; sourceTree = "<group>"; };
+		934BF08F18179AAC00010D82 /* HPCAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPCAppController.m; sourceTree = "<group>"; };
+		934BF09118179AC300010D82 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		934BF0541817986A00010D82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				934BF05B1817986A00010D82 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		934BF0751817986A00010D82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				934BF07B1817986A00010D82 /* Cocoa.framework in Frameworks */,
+				934BF07A1817986A00010D82 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		934BF04E1817986A00010D82 = {
+			isa = PBXGroup;
+			children = (
+				934BF0601817986A00010D82 /* HeadphoneControl */,
+				934BF07E1817986A00010D82 /* HeadphoneControlTests */,
+				934BF0591817986A00010D82 /* Frameworks */,
+				934BF0581817986A00010D82 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		934BF0581817986A00010D82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				934BF0571817986A00010D82 /* HeadphoneControl.app */,
+				934BF0781817986A00010D82 /* HeadphoneControlTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		934BF0591817986A00010D82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				934BF05A1817986A00010D82 /* Cocoa.framework */,
+				934BF0791817986A00010D82 /* XCTest.framework */,
+				934BF05C1817986A00010D82 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		934BF05C1817986A00010D82 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				934BF05D1817986A00010D82 /* AppKit.framework */,
+				934BF05E1817986A00010D82 /* CoreData.framework */,
+				934BF05F1817986A00010D82 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		934BF0601817986A00010D82 /* HeadphoneControl */ = {
+			isa = PBXGroup;
+			children = (
+				934BF06C1817986A00010D82 /* HPCAppDelegate.h */,
+				934BF06D1817986A00010D82 /* HPCAppDelegate.m */,
+				934BF06F1817986A00010D82 /* MainMenu.xib */,
+				934BF0721817986A00010D82 /* Images.xcassets */,
+				934BF0611817986A00010D82 /* Supporting Files */,
+				934BF08E18179AAC00010D82 /* HPCAppController.h */,
+				934BF08F18179AAC00010D82 /* HPCAppController.m */,
+				934BF09118179AC300010D82 /* icon.png */,
+			);
+			path = HeadphoneControl;
+			sourceTree = "<group>";
+		};
+		934BF0611817986A00010D82 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				934BF0621817986A00010D82 /* HeadphoneControl-Info.plist */,
+				934BF0631817986A00010D82 /* InfoPlist.strings */,
+				934BF0661817986A00010D82 /* main.m */,
+				934BF0681817986A00010D82 /* HeadphoneControl-Prefix.pch */,
+				934BF0691817986A00010D82 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		934BF07E1817986A00010D82 /* HeadphoneControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				934BF0841817986A00010D82 /* HeadphoneControlTests.m */,
+				934BF07F1817986A00010D82 /* Supporting Files */,
+			);
+			path = HeadphoneControlTests;
+			sourceTree = "<group>";
+		};
+		934BF07F1817986A00010D82 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				934BF0801817986A00010D82 /* HeadphoneControlTests-Info.plist */,
+				934BF0811817986A00010D82 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		934BF0561817986A00010D82 /* HeadphoneControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 934BF0881817986A00010D82 /* Build configuration list for PBXNativeTarget "HeadphoneControl" */;
+			buildPhases = (
+				934BF0531817986A00010D82 /* Sources */,
+				934BF0541817986A00010D82 /* Frameworks */,
+				934BF0551817986A00010D82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeadphoneControl;
+			productName = HeadphoneControl;
+			productReference = 934BF0571817986A00010D82 /* HeadphoneControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		934BF0771817986A00010D82 /* HeadphoneControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 934BF08B1817986A00010D82 /* Build configuration list for PBXNativeTarget "HeadphoneControlTests" */;
+			buildPhases = (
+				934BF0741817986A00010D82 /* Sources */,
+				934BF0751817986A00010D82 /* Frameworks */,
+				934BF0761817986A00010D82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				934BF07D1817986A00010D82 /* PBXTargetDependency */,
+			);
+			name = HeadphoneControlTests;
+			productName = HeadphoneControlTests;
+			productReference = 934BF0781817986A00010D82 /* HeadphoneControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		934BF04F1817986A00010D82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HPC;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Aaron Morais";
+				TargetAttributes = {
+					934BF0771817986A00010D82 = {
+						TestTargetID = 934BF0561817986A00010D82;
+					};
+				};
+			};
+			buildConfigurationList = 934BF0521817986A00010D82 /* Build configuration list for PBXProject "HeadphoneControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 934BF04E1817986A00010D82;
+			productRefGroup = 934BF0581817986A00010D82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				934BF0561817986A00010D82 /* HeadphoneControl */,
+				934BF0771817986A00010D82 /* HeadphoneControlTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		934BF0551817986A00010D82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				934BF0651817986A00010D82 /* InfoPlist.strings in Resources */,
+				934BF09218179AC300010D82 /* icon.png in Resources */,
+				934BF0731817986A00010D82 /* Images.xcassets in Resources */,
+				934BF06B1817986A00010D82 /* Credits.rtf in Resources */,
+				934BF0711817986A00010D82 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		934BF0761817986A00010D82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				934BF0831817986A00010D82 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		934BF0531817986A00010D82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				934BF06E1817986A00010D82 /* HPCAppDelegate.m in Sources */,
+				934BF09018179AAC00010D82 /* HPCAppController.m in Sources */,
+				934BF0671817986A00010D82 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		934BF0741817986A00010D82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				934BF0851817986A00010D82 /* HeadphoneControlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		934BF07D1817986A00010D82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 934BF0561817986A00010D82 /* HeadphoneControl */;
+			targetProxy = 934BF07C1817986A00010D82 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		934BF0631817986A00010D82 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				934BF0641817986A00010D82 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		934BF0691817986A00010D82 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				934BF06A1817986A00010D82 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		934BF06F1817986A00010D82 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				934BF0701817986A00010D82 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		934BF0811817986A00010D82 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				934BF0821817986A00010D82 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		934BF0861817986A00010D82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		934BF0871817986A00010D82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		934BF0891817986A00010D82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HeadphoneControl/HeadphoneControl-Prefix.pch";
+				INFOPLIST_FILE = "HeadphoneControl/HeadphoneControl-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		934BF08A1817986A00010D82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HeadphoneControl/HeadphoneControl-Prefix.pch";
+				INFOPLIST_FILE = "HeadphoneControl/HeadphoneControl-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		934BF08C1817986A00010D82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HeadphoneControl.app/Contents/MacOS/HeadphoneControl";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HeadphoneControl/HeadphoneControl-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HeadphoneControlTests/HeadphoneControlTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		934BF08D1817986A00010D82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HeadphoneControl.app/Contents/MacOS/HeadphoneControl";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HeadphoneControl/HeadphoneControl-Prefix.pch";
+				INFOPLIST_FILE = "HeadphoneControlTests/HeadphoneControlTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		934BF0521817986A00010D82 /* Build configuration list for PBXProject "HeadphoneControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				934BF0861817986A00010D82 /* Debug */,
+				934BF0871817986A00010D82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		934BF0881817986A00010D82 /* Build configuration list for PBXNativeTarget "HeadphoneControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				934BF0891817986A00010D82 /* Debug */,
+				934BF08A1817986A00010D82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		934BF08B1817986A00010D82 /* Build configuration list for PBXNativeTarget "HeadphoneControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				934BF08C1817986A00010D82 /* Debug */,
+				934BF08D1817986A00010D82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 934BF04F1817986A00010D82 /* Project object */;
+}
