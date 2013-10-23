@@ -7,6 +7,7 @@
 //
 
 #import "HPCAppController.h"
+#import "DDHidLib.h"
 
 @implementation HPCAppController
 

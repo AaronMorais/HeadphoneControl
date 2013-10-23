@@ -20,6 +20,22 @@
 		934BF0851817986A00010D82 /* HeadphoneControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 934BF0841817986A00010D82 /* HeadphoneControlTests.m */; };
 		934BF09018179AAC00010D82 /* HPCAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 934BF08F18179AAC00010D82 /* HPCAppController.m */; };
 		934BF09218179AC300010D82 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 934BF09118179AC300010D82 /* icon.png */; };
+		934BF0DA1817A5B300010D82 /* DDHidAppleMikey.m in Sources */ = {isa = PBXBuildFile; fileRef = 934BF0BF1817A5B300010D82 /* DDHidAppleMikey.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		934BF0DB1817A5B300010D82 /* DDHidAppleRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = 934BF0C11817A5B300010D82 /* DDHidAppleRemote.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		934BF0DC1817A5B300010D82 /* DDHidDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 934BF0C31817A5B300010D82 /* DDHidDevice.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		934BF0DD1817A5B300010D82 /* DDHidElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 934BF0C51817A5B300010D82 /* DDHidElement.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		934BF0DE1817A5B300010D82 /* DDHidEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 934BF0C71817A5B300010D82 /* DDHidEvent.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		934BF0DF1817A5B300010D82 /* DDHidJoystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 934BF0C91817A5B300010D82 /* DDHidJoystick.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		934BF0E01817A5B300010D82 /* DDHidKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 934BF0CB1817A5B300010D82 /* DDHidKeyboard.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		934BF0E11817A5B300010D82 /* DDHidKeyboardBarcodeScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 934BF0CD1817A5B300010D82 /* DDHidKeyboardBarcodeScanner.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		934BF0E21817A5B300010D82 /* DDHidMouse.m in Sources */ = {isa = PBXBuildFile; fileRef = 934BF0D01817A5B300010D82 /* DDHidMouse.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		934BF0E31817A5B300010D82 /* DDHidQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 934BF0D21817A5B300010D82 /* DDHidQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		934BF0E41817A5B300010D82 /* DDHidStandardUsages.plist in Resources */ = {isa = PBXBuildFile; fileRef = 934BF0D31817A5B300010D82 /* DDHidStandardUsages.plist */; };
+		934BF0E51817A5B300010D82 /* DDHidUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = 934BF0D51817A5B300010D82 /* DDHidUsage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		934BF0E61817A5B300010D82 /* DDHidUsageTables.m in Sources */ = {isa = PBXBuildFile; fileRef = 934BF0D71817A5B300010D82 /* DDHidUsageTables.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		934BF0E71817A5B300010D82 /* NSDictionary+DDHidExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 934BF0D91817A5B300010D82 /* NSDictionary+DDHidExtras.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		934BF0EA1817A60400010D82 /* NSXReturnThrowError.m in Sources */ = {isa = PBXBuildFile; fileRef = 934BF0E91817A60400010D82 /* NSXReturnThrowError.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		934BF0EC1817A73E00010D82 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934BF0EB1817A73E00010D82 /* IOKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +71,37 @@
 		934BF08E18179AAC00010D82 /* HPCAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPCAppController.h; sourceTree = "<group>"; };
 		934BF08F18179AAC00010D82 /* HPCAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPCAppController.m; sourceTree = "<group>"; };
 		934BF09118179AC300010D82 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		934BF0BE1817A5B300010D82 /* DDHidAppleMikey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHidAppleMikey.h; path = Libraries/DDHidLib/lib/DDHidAppleMikey.h; sourceTree = SOURCE_ROOT; };
+		934BF0BF1817A5B300010D82 /* DDHidAppleMikey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHidAppleMikey.m; path = Libraries/DDHidLib/lib/DDHidAppleMikey.m; sourceTree = SOURCE_ROOT; };
+		934BF0C01817A5B300010D82 /* DDHidAppleRemote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHidAppleRemote.h; path = Libraries/DDHidLib/lib/DDHidAppleRemote.h; sourceTree = SOURCE_ROOT; };
+		934BF0C11817A5B300010D82 /* DDHidAppleRemote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHidAppleRemote.m; path = Libraries/DDHidLib/lib/DDHidAppleRemote.m; sourceTree = SOURCE_ROOT; };
+		934BF0C21817A5B300010D82 /* DDHidDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHidDevice.h; path = Libraries/DDHidLib/lib/DDHidDevice.h; sourceTree = SOURCE_ROOT; };
+		934BF0C31817A5B300010D82 /* DDHidDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHidDevice.m; path = Libraries/DDHidLib/lib/DDHidDevice.m; sourceTree = SOURCE_ROOT; };
+		934BF0C41817A5B300010D82 /* DDHidElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHidElement.h; path = Libraries/DDHidLib/lib/DDHidElement.h; sourceTree = SOURCE_ROOT; };
+		934BF0C51817A5B300010D82 /* DDHidElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHidElement.m; path = Libraries/DDHidLib/lib/DDHidElement.m; sourceTree = SOURCE_ROOT; };
+		934BF0C61817A5B300010D82 /* DDHidEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHidEvent.h; path = Libraries/DDHidLib/lib/DDHidEvent.h; sourceTree = SOURCE_ROOT; };
+		934BF0C71817A5B300010D82 /* DDHidEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHidEvent.m; path = Libraries/DDHidLib/lib/DDHidEvent.m; sourceTree = SOURCE_ROOT; };
+		934BF0C81817A5B300010D82 /* DDHidJoystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHidJoystick.h; path = Libraries/DDHidLib/lib/DDHidJoystick.h; sourceTree = SOURCE_ROOT; };
+		934BF0C91817A5B300010D82 /* DDHidJoystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHidJoystick.m; path = Libraries/DDHidLib/lib/DDHidJoystick.m; sourceTree = SOURCE_ROOT; };
+		934BF0CA1817A5B300010D82 /* DDHidKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHidKeyboard.h; path = Libraries/DDHidLib/lib/DDHidKeyboard.h; sourceTree = SOURCE_ROOT; };
+		934BF0CB1817A5B300010D82 /* DDHidKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHidKeyboard.m; path = Libraries/DDHidLib/lib/DDHidKeyboard.m; sourceTree = SOURCE_ROOT; };
+		934BF0CC1817A5B300010D82 /* DDHidKeyboardBarcodeScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHidKeyboardBarcodeScanner.h; path = Libraries/DDHidLib/lib/DDHidKeyboardBarcodeScanner.h; sourceTree = SOURCE_ROOT; };
+		934BF0CD1817A5B300010D82 /* DDHidKeyboardBarcodeScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHidKeyboardBarcodeScanner.m; path = Libraries/DDHidLib/lib/DDHidKeyboardBarcodeScanner.m; sourceTree = SOURCE_ROOT; };
+		934BF0CE1817A5B300010D82 /* DDHidLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHidLib.h; path = Libraries/DDHidLib/lib/DDHidLib.h; sourceTree = SOURCE_ROOT; };
+		934BF0CF1817A5B300010D82 /* DDHidMouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHidMouse.h; path = Libraries/DDHidLib/lib/DDHidMouse.h; sourceTree = SOURCE_ROOT; };
+		934BF0D01817A5B300010D82 /* DDHidMouse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHidMouse.m; path = Libraries/DDHidLib/lib/DDHidMouse.m; sourceTree = SOURCE_ROOT; };
+		934BF0D11817A5B300010D82 /* DDHidQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHidQueue.h; path = Libraries/DDHidLib/lib/DDHidQueue.h; sourceTree = SOURCE_ROOT; };
+		934BF0D21817A5B300010D82 /* DDHidQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHidQueue.m; path = Libraries/DDHidLib/lib/DDHidQueue.m; sourceTree = SOURCE_ROOT; };
+		934BF0D31817A5B300010D82 /* DDHidStandardUsages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = DDHidStandardUsages.plist; path = Libraries/DDHidLib/lib/DDHidStandardUsages.plist; sourceTree = SOURCE_ROOT; };
+		934BF0D41817A5B300010D82 /* DDHidUsage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHidUsage.h; path = Libraries/DDHidLib/lib/DDHidUsage.h; sourceTree = SOURCE_ROOT; };
+		934BF0D51817A5B300010D82 /* DDHidUsage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHidUsage.m; path = Libraries/DDHidLib/lib/DDHidUsage.m; sourceTree = SOURCE_ROOT; };
+		934BF0D61817A5B300010D82 /* DDHidUsageTables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHidUsageTables.h; path = Libraries/DDHidLib/lib/DDHidUsageTables.h; sourceTree = SOURCE_ROOT; };
+		934BF0D71817A5B300010D82 /* DDHidUsageTables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHidUsageTables.m; path = Libraries/DDHidLib/lib/DDHidUsageTables.m; sourceTree = SOURCE_ROOT; };
+		934BF0D81817A5B300010D82 /* NSDictionary+DDHidExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+DDHidExtras.h"; path = "Libraries/DDHidLib/lib/NSDictionary+DDHidExtras.h"; sourceTree = SOURCE_ROOT; };
+		934BF0D91817A5B300010D82 /* NSDictionary+DDHidExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+DDHidExtras.m"; path = "Libraries/DDHidLib/lib/NSDictionary+DDHidExtras.m"; sourceTree = SOURCE_ROOT; };
+		934BF0E81817A60400010D82 /* NSXReturnThrowError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSXReturnThrowError.h; path = Libraries/DDHidLib/vendor/NSXReturnThrowError/NSXReturnThrowError.h; sourceTree = SOURCE_ROOT; };
+		934BF0E91817A60400010D82 /* NSXReturnThrowError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSXReturnThrowError.m; path = Libraries/DDHidLib/vendor/NSXReturnThrowError/NSXReturnThrowError.m; sourceTree = SOURCE_ROOT; };
+		934BF0EB1817A73E00010D82 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				934BF0EC1817A73E00010D82 /* IOKit.framework in Frameworks */,
 				934BF05B1817986A00010D82 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +148,7 @@
 		934BF0591817986A00010D82 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				934BF0EB1817A73E00010D82 /* IOKit.framework */,
 				934BF05A1817986A00010D82 /* Cocoa.framework */,
 				934BF0791817986A00010D82 /* XCTest.framework */,
 				934BF05C1817986A00010D82 /* Other Frameworks */,
@@ -125,6 +174,7 @@
 				934BF06F1817986A00010D82 /* MainMenu.xib */,
 				934BF0721817986A00010D82 /* Images.xcassets */,
 				934BF0611817986A00010D82 /* Supporting Files */,
+				934BF0BD1817A57F00010D82 /* DDHidLib */,
 				934BF08E18179AAC00010D82 /* HPCAppController.h */,
 				934BF08F18179AAC00010D82 /* HPCAppController.m */,
 				934BF09118179AC300010D82 /* icon.png */,
@@ -160,6 +210,43 @@
 				934BF0811817986A00010D82 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		934BF0BD1817A57F00010D82 /* DDHidLib */ = {
+			isa = PBXGroup;
+			children = (
+				934BF0BE1817A5B300010D82 /* DDHidAppleMikey.h */,
+				934BF0BF1817A5B300010D82 /* DDHidAppleMikey.m */,
+				934BF0C01817A5B300010D82 /* DDHidAppleRemote.h */,
+				934BF0C11817A5B300010D82 /* DDHidAppleRemote.m */,
+				934BF0C21817A5B300010D82 /* DDHidDevice.h */,
+				934BF0C31817A5B300010D82 /* DDHidDevice.m */,
+				934BF0C41817A5B300010D82 /* DDHidElement.h */,
+				934BF0C51817A5B300010D82 /* DDHidElement.m */,
+				934BF0C61817A5B300010D82 /* DDHidEvent.h */,
+				934BF0C71817A5B300010D82 /* DDHidEvent.m */,
+				934BF0C81817A5B300010D82 /* DDHidJoystick.h */,
+				934BF0C91817A5B300010D82 /* DDHidJoystick.m */,
+				934BF0CA1817A5B300010D82 /* DDHidKeyboard.h */,
+				934BF0CB1817A5B300010D82 /* DDHidKeyboard.m */,
+				934BF0CC1817A5B300010D82 /* DDHidKeyboardBarcodeScanner.h */,
+				934BF0CD1817A5B300010D82 /* DDHidKeyboardBarcodeScanner.m */,
+				934BF0CE1817A5B300010D82 /* DDHidLib.h */,
+				934BF0CF1817A5B300010D82 /* DDHidMouse.h */,
+				934BF0D01817A5B300010D82 /* DDHidMouse.m */,
+				934BF0D11817A5B300010D82 /* DDHidQueue.h */,
+				934BF0D21817A5B300010D82 /* DDHidQueue.m */,
+				934BF0D31817A5B300010D82 /* DDHidStandardUsages.plist */,
+				934BF0D41817A5B300010D82 /* DDHidUsage.h */,
+				934BF0D51817A5B300010D82 /* DDHidUsage.m */,
+				934BF0D61817A5B300010D82 /* DDHidUsageTables.h */,
+				934BF0D71817A5B300010D82 /* DDHidUsageTables.m */,
+				934BF0D81817A5B300010D82 /* NSDictionary+DDHidExtras.h */,
+				934BF0D91817A5B300010D82 /* NSDictionary+DDHidExtras.m */,
+				934BF0E81817A60400010D82 /* NSXReturnThrowError.h */,
+				934BF0E91817A60400010D82 /* NSXReturnThrowError.m */,
+			);
+			name = DDHidLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +329,7 @@
 				934BF0651817986A00010D82 /* InfoPlist.strings in Resources */,
 				934BF09218179AC300010D82 /* icon.png in Resources */,
 				934BF0731817986A00010D82 /* Images.xcassets in Resources */,
+				934BF0E41817A5B300010D82 /* DDHidStandardUsages.plist in Resources */,
 				934BF06B1817986A00010D82 /* Credits.rtf in Resources */,
 				934BF0711817986A00010D82 /* MainMenu.xib in Resources */,
 			);
@@ -262,9 +350,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				934BF0E11817A5B300010D82 /* DDHidKeyboardBarcodeScanner.m in Sources */,
+				934BF0DB1817A5B300010D82 /* DDHidAppleRemote.m in Sources */,
 				934BF06E1817986A00010D82 /* HPCAppDelegate.m in Sources */,
+				934BF0DD1817A5B300010D82 /* DDHidElement.m in Sources */,
 				934BF09018179AAC00010D82 /* HPCAppController.m in Sources */,
+				934BF0E21817A5B300010D82 /* DDHidMouse.m in Sources */,
+				934BF0E31817A5B300010D82 /* DDHidQueue.m in Sources */,
+				934BF0DF1817A5B300010D82 /* DDHidJoystick.m in Sources */,
+				934BF0E61817A5B300010D82 /* DDHidUsageTables.m in Sources */,
+				934BF0EA1817A60400010D82 /* NSXReturnThrowError.m in Sources */,
+				934BF0DA1817A5B300010D82 /* DDHidAppleMikey.m in Sources */,
+				934BF0E01817A5B300010D82 /* DDHidKeyboard.m in Sources */,
+				934BF0E71817A5B300010D82 /* NSDictionary+DDHidExtras.m in Sources */,
 				934BF0671817986A00010D82 /* main.m in Sources */,
+				934BF0E51817A5B300010D82 /* DDHidUsage.m in Sources */,
+				934BF0DE1817A5B300010D82 /* DDHidEvent.m in Sources */,
+				934BF0DC1817A5B300010D82 /* DDHidDevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +577,7 @@
 				934BF08A1817986A00010D82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		934BF08B1817986A00010D82 /* Build configuration list for PBXNativeTarget "HeadphoneControlTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +586,7 @@
 				934BF08D1817986A00010D82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
