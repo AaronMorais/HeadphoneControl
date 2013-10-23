@@ -11,6 +11,7 @@
 
 @interface HPCAppController ()
 @property (nonatomic, retain) NSArray *mikeys;
+@property (nonatomic, assign) BOOL relaunchOnLogin;
 @end
 
 typedef enum {
@@ -41,11 +42,33 @@ typedef enum {
     //Tells the NSStatusItem what menu to load
     [statusItem setMenu:statusMenu];
     //Sets the tooptip for our item
-    [statusItem setToolTip:@"My Custom Menu Item"];
+    [statusItem setToolTip:@"Headphone Control"];
     //Enables highlighting
     [statusItem setHighlightMode:YES];
     
     [self _setMikeysEnabled:YES];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [self setRelaunchOnLogin:[[defaults objectForKey:@"relaunchOnLogin"] boolValue]];
+}
+
+- (void)setRelaunchOnLogin:(BOOL)relaunchOnLogin {
+    if (relaunchOnLogin) {
+        [NSApp enableRelaunchOnLogin];
+    } else {
+        [NSApp disableRelaunchOnLogin];
+    }
+    startAtLoginMenuItem.state = (BOOL)relaunchOnLogin;
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:[NSNumber numberWithBool:relaunchOnLogin] forKey:@"relaunchOnLogin"];
+    _relaunchOnLogin = relaunchOnLogin;
+}
+
+- (IBAction)startAtLoginToggled:(id)sender {
+    if (sender == startAtLoginMenuItem) {
+        NSMenuItem *menuItem = (NSMenuItem *)sender;
+        BOOL state = (BOOL)menuItem.state;
+        [self setRelaunchOnLogin:!state];
+    }
 }
 
 - (void)_setMikeysEnabled:(BOOL)enabled {

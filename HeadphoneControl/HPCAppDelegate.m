@@ -10,4 +10,8 @@
 
 @implementation HPCAppDelegate
 
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    [[NSUserDefaults standardUserDefaults] registerDefaults:@{@"relaunchOnLogin":@YES}];
+}
+
 @end

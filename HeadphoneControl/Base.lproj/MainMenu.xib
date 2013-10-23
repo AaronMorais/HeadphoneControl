@@ -16,8 +16,11 @@
         <customObject id="420" customClass="NSFontManager"/>
         <menu id="BFZ-Y3-cgX" userLabel="StatusItem">
             <items>
-                <menuItem title="Enable Headphone Control" state="on" id="D9n-vV-4OP">
+                <menuItem title="Start at Login" state="on" id="Sjg-jg-bPF">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="startAtLoginToggled:" target="mdD-7X-ePB" id="QXs-ZQ-KfL"/>
+                    </connections>
                 </menuItem>
                 <menuItem title="Quit" id="g7L-Ih-Nts">
                     <modifierMask key="keyEquivalentModifierMask"/>
@@ -29,6 +32,7 @@
         </menu>
         <customObject id="mdD-7X-ePB" customClass="HPCAppController">
             <connections>
+                <outlet property="startAtLoginMenuItem" destination="Sjg-jg-bPF" id="yB1-dS-RT2"/>
                 <outlet property="statusMenu" destination="BFZ-Y3-cgX" id="Njq-fo-6ha"/>
             </connections>
         </customObject>

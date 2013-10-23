@@ -10,10 +10,13 @@
 
 @interface HPCAppController : NSObject {
     IBOutlet NSMenu *statusMenu;
+    IBOutlet NSMenuItem *startAtLoginMenuItem;
 
     NSStatusItem *statusItem;
     NSImage *statusImage;
     NSImage *statusHighlightImage;
 }
+
+- (IBAction)startAtLoginToggled:(id)sender;
 
 @end
