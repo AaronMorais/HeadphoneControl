@@ -23,7 +23,7 @@ typedef enum {
 
 @implementation HPCAppController
 
-- (void) awakeFromNib{
+- (void) awakeFromNib {
     //Create the NSStatusBar and set its length
     statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength];
 
@@ -60,17 +60,6 @@ typedef enum {
     }
 }
 
-- (void) ddhidAppleMikey:(DDHidAppleMikey *)mikey press:(unsigned int)usageId upOrDown:(BOOL)upOrDown {
-    if(upOrDown) { return;}
-    if(usageId == 137) {
-        [self _simulateMediaKeyPressWithKeyType:KeyType_PLAY];
-    } else if(usageId == 138) {
-        [self _simulateMediaKeyPressWithKeyType:KeyType_NEXT];
-    } else if(usageId == 139) {
-        [self _simulateMediaKeyPressWithKeyType:KeyType_PREVIOUS];
-    }
-}
-
 - (void) _simulateMediaKeyPressWithKeyType:(KeyType)type {
     [self _simulateMediaKeyWithKeyType:type isDown:YES];
     [self _simulateMediaKeyWithKeyType:type isDown:NO];
@@ -88,6 +77,19 @@ typedef enum {
                                            data1:((type << 16) | ((down ? 0xa : 0xb) << 8))
                                            data2:-1];
     CGEventPost(0, event.CGEvent);
+}
+
+#pragma mark DDHidAppleMikey Delegate
+
+- (void) ddhidAppleMikey:(DDHidAppleMikey *)mikey press:(unsigned int)usageId upOrDown:(BOOL)upOrDown {
+    if(upOrDown) { return;}
+    if(usageId == 137) {
+        [self _simulateMediaKeyPressWithKeyType:KeyType_PLAY];
+    } else if(usageId == 138) {
+        [self _simulateMediaKeyPressWithKeyType:KeyType_NEXT];
+    } else if(usageId == 139) {
+        [self _simulateMediaKeyPressWithKeyType:KeyType_PREVIOUS];
+    }
 }
 
 @end

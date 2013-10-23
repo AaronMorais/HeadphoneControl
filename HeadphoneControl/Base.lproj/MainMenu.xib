@@ -16,11 +16,8 @@
         <customObject id="420" customClass="NSFontManager"/>
         <menu id="BFZ-Y3-cgX" userLabel="StatusItem">
             <items>
-                <menuItem title="Hello World" id="D9n-vV-4OP">
+                <menuItem title="Enable Headphone Control" state="on" id="D9n-vV-4OP">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <connections>
-                        <action selector="helloWorld:" target="mdD-7X-ePB" id="YqS-hA-KWp"/>
-                    </connections>
                 </menuItem>
                 <menuItem title="Quit" id="g7L-Ih-Nts">
                     <modifierMask key="keyEquivalentModifierMask"/>

@@ -169,15 +169,14 @@
 		934BF0601817986A00010D82 /* HeadphoneControl */ = {
 			isa = PBXGroup;
 			children = (
+				934BF08E18179AAC00010D82 /* HPCAppController.h */,
+				934BF08F18179AAC00010D82 /* HPCAppController.m */,
 				934BF06C1817986A00010D82 /* HPCAppDelegate.h */,
 				934BF06D1817986A00010D82 /* HPCAppDelegate.m */,
 				934BF06F1817986A00010D82 /* MainMenu.xib */,
-				934BF0721817986A00010D82 /* Images.xcassets */,
+				934BF09118179AC300010D82 /* icon.png */,
 				934BF0611817986A00010D82 /* Supporting Files */,
 				934BF0BD1817A57F00010D82 /* DDHidLib */,
-				934BF08E18179AAC00010D82 /* HPCAppController.h */,
-				934BF08F18179AAC00010D82 /* HPCAppController.m */,
-				934BF09118179AC300010D82 /* icon.png */,
 			);
 			path = HeadphoneControl;
 			sourceTree = "<group>";
@@ -185,6 +184,7 @@
 		934BF0611817986A00010D82 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				934BF0721817986A00010D82 /* Images.xcassets */,
 				934BF0621817986A00010D82 /* HeadphoneControl-Info.plist */,
 				934BF0631817986A00010D82 /* InfoPlist.strings */,
 				934BF0661817986A00010D82 /* main.m */,
