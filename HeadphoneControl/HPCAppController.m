@@ -9,6 +9,18 @@
 #import "HPCAppController.h"
 #import "DDHidLib.h"
 
+@interface HPCAppController ()
+@property (nonatomic, retain) NSArray *mikeys;
+@end
+
+typedef enum {
+    KeyType_SOUND_UP = 0,
+    KeyType_SOUND_DOWN = 1,
+    KeyType_PLAY = 16,
+    KeyType_NEXT = 17,
+    KeyType_PREVIOUS = 18
+} KeyType;
+
 @implementation HPCAppController
 
 - (void) awakeFromNib{
@@ -32,11 +44,50 @@
     [statusItem setToolTip:@"My Custom Menu Item"];
     //Enables highlighting
     [statusItem setHighlightMode:YES];
+    
+    [self _setMikeysEnabled:YES];
 }
 
+- (void)_setMikeysEnabled:(BOOL)enabled {
+    if (enabled) {
+        self.mikeys = [DDHidAppleMikey allMikeys];
+        [self.mikeys makeObjectsPerformSelector:@selector(setDelegate:) withObject:self];
+        [self.mikeys makeObjectsPerformSelector:@selector(startListening)];
+    } else {
+        [self.mikeys makeObjectsPerformSelector:@selector(setDelegate:) withObject:nil];
+        [self.mikeys makeObjectsPerformSelector:@selector(stopListening)];
+        self.mikeys = nil;
+    }
+}
 
-- (void)helloWorld:(id)sender {
-    NSLog(@"yo yo yo");
+- (void) ddhidAppleMikey:(DDHidAppleMikey *)mikey press:(unsigned int)usageId upOrDown:(BOOL)upOrDown {
+    if(upOrDown) { return;}
+    if(usageId == 137) {
+        [self _simulateMediaKeyPressWithKeyType:KeyType_PLAY];
+    } else if(usageId == 138) {
+        [self _simulateMediaKeyPressWithKeyType:KeyType_NEXT];
+    } else if(usageId == 139) {
+        [self _simulateMediaKeyPressWithKeyType:KeyType_PREVIOUS];
+    }
+}
+
+- (void) _simulateMediaKeyPressWithKeyType:(KeyType)type {
+    [self _simulateMediaKeyWithKeyType:type isDown:YES];
+    [self _simulateMediaKeyWithKeyType:type isDown:NO];
+}
+
+// Source: http://stackoverflow.com/questions/11045814/emulate-media-key-press-on-mac
+- (void) _simulateMediaKeyWithKeyType:(KeyType)type isDown:(BOOL)down {
+    NSEvent *event = [NSEvent otherEventWithType:NSSystemDefined
+                                        location:CGPointMake(0, 0)
+                                   modifierFlags:down ? 0xa00 : 0xb00
+                                       timestamp:0
+                                    windowNumber:0
+                                         context:0
+                                         subtype:8
+                                           data1:((type << 16) | ((down ? 0xa : 0xb) << 8))
+                                           data2:-1];
+    CGEventPost(0, event.CGEvent);
 }
 
 @end
