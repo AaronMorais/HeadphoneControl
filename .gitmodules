@@ -1,3 +1,6 @@
 [submodule "Libraries/DDHidLib"]
 	path = Libraries/DDHidLib
 	url = git@github.com:Daij-Djan/DDHidLib.git
+[submodule "Libraries/play-button-itunes-patch"]
+	path = Libraries/play-button-itunes-patch
+	url = git@github.com:thebitguru/play-button-itunes-patch.git
