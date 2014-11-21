@@ -9,12 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @interface HPCAppController : NSObject {
-    IBOutlet NSMenu *statusMenu;
-    IBOutlet NSMenuItem *startAtLoginMenuItem;
+  IBOutlet NSMenu *statusMenu;
+  IBOutlet NSMenuItem *startAtLoginMenuItem;
 
-    NSStatusItem *statusItem;
-    NSImage *statusImage;
-    NSImage *statusHighlightImage;
+  NSStatusItem *statusItem;
+  NSImage *statusImage;
+  NSImage *statusHighlightImage;
 }
 
 - (IBAction)startAtLoginToggled:(id)sender;
