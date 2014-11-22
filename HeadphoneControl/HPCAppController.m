@@ -18,8 +18,8 @@ typedef enum {
   KeyType_SOUND_UP = 0,
   KeyType_SOUND_DOWN = 1,
   KeyType_PLAY = 16,
-  KeyType_NEXT = 17,
-  KeyType_PREVIOUS = 18
+  KeyType_NEXT = 19,
+  KeyType_PREVIOUS = 20
 } KeyType;
 
 @implementation HPCAppController
