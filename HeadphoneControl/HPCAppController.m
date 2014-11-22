@@ -52,6 +52,10 @@ typedef enum {
   self.relaunchOnLogin = [[NSBundle mainBundle] isLoginItem];
 
   if (![self isPatched]) {
+    NSAlert *alert = [[NSAlert alloc] init];
+    [alert setMessageText:@"To enable full control of your headphones, we need to patch iTunes. To do this, you will be prompted twice for permission."];
+    [alert runModal];
+
     NSString *resourcePath = [[NSBundle mainBundle] resourcePath];
     NSString *patchPath = [NSString stringWithFormat:@"%@/patch.sh",resourcePath];
     STPrivilegedTask *task = [STPrivilegedTask launchedPrivilegedTaskWithLaunchPath:@"/bin/sh"
