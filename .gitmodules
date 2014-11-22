@@ -4,3 +4,9 @@
 [submodule "Libraries/play-button-itunes-patch"]
 	path = Libraries/play-button-itunes-patch
 	url = git@github.com:thebitguru/play-button-itunes-patch.git
+[submodule "Libraries/IYLoginItem"]
+	path = Libraries/IYLoginItem
+	url = git@github.com:ianyh/IYLoginItem.git
+[submodule "Libraries/STPrivilegedTask"]
+	path = Libraries/STPrivilegedTask
+	url = git@github.com:sveinbjornt/STPrivilegedTask.git

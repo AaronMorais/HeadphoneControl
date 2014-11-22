@@ -10,6 +10,14 @@
 	<string>HeadphoneControl</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>38B64F689B39CBF666CFCC0345ED0BF865D4E737</key>
+		<string>github.com:thebitguru/play-button-itunes-patch.git</string>
+		<key>49039C96432B687386926B2AFE2AFF2966A647E8</key>
+		<string>github.com:ianyh/IYLoginItem.git</string>
+		<key>5A18CC4105103F3DCAAD74EC93EFD3FF8BB5508A</key>
+		<string>github.com:sveinbjornt/STPrivilegedTask.git</string>
+		<key>E0B7DFAF0CAC6D1FC8441E431C8D248AF9662DE8</key>
+		<string>github.com:Daij-Djan/DDHidLib.git</string>
 		<key>F62EAD773A042DDB9A82D76EB7E8910EC9AA64A4</key>
 		<string>github.com:AaronMorais/HeadphoneControl.git</string>
 	</dict>
@@ -17,6 +25,14 @@
 	<string>HeadphoneControl.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>38B64F689B39CBF666CFCC0345ED0BF865D4E737</key>
+		<string>../../Libraries/play-button-itunes-patch/</string>
+		<key>49039C96432B687386926B2AFE2AFF2966A647E8</key>
+		<string>../../Libraries/IYLoginItem</string>
+		<key>5A18CC4105103F3DCAAD74EC93EFD3FF8BB5508A</key>
+		<string>../../Libraries/STPrivilegedTask/</string>
+		<key>E0B7DFAF0CAC6D1FC8441E431C8D248AF9662DE8</key>
+		<string>../../Libraries/DDHidLib</string>
 		<key>F62EAD773A042DDB9A82D76EB7E8910EC9AA64A4</key>
 		<string>../..</string>
 	</dict>
@@ -32,9 +48,41 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E0B7DFAF0CAC6D1FC8441E431C8D248AF9662DE8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DDHidLib</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>F62EAD773A042DDB9A82D76EB7E8910EC9AA64A4</string>
 			<key>IDESourceControlWCCName</key>
 			<string>HeadphoneControl</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>49039C96432B687386926B2AFE2AFF2966A647E8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IYLoginItem</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>38B64F689B39CBF666CFCC0345ED0BF865D4E737</string>
+			<key>IDESourceControlWCCName</key>
+			<string>play-button-itunes-patch</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5A18CC4105103F3DCAAD74EC93EFD3FF8BB5508A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>STPrivilegedTask</string>
 		</dict>
 	</array>
 </dict>

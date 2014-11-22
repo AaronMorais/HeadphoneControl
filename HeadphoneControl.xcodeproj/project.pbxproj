@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		930FA97E1A202BD300C092C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 930FA9781A202BD300C092C2 /* InfoPlist.strings */; };
+		930FA97F1A202BD300C092C2 /* IYLoginItem-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 930FA97A1A202BD300C092C2 /* IYLoginItem-Info.plist */; };
+		930FA9801A202BD300C092C2 /* NSBundle+LoginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 930FA97D1A202BD300C092C2 /* NSBundle+LoginItem.m */; };
+		9340CB611A20301C00C02575 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9340CB601A20301C00C02575 /* Security.framework */; };
+		9340CB661A2036BF00C02575 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 9340CB631A2036BF00C02575 /* README */; };
+		9340CB671A2036BF00C02575 /* STPrivilegedTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 9340CB651A2036BF00C02575 /* STPrivilegedTask.m */; };
+		9340CB7E1A203D1F00C02575 /* edit_rcd_bin.py in Resources */ = {isa = PBXBuildFile; fileRef = 9340CB7B1A203D1F00C02575 /* edit_rcd_bin.py */; };
+		9340CB7F1A203D1F00C02575 /* patch.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9340CB7C1A203D1F00C02575 /* patch.sh */; };
+		9340CB801A203D1F00C02575 /* verifyPatch.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9340CB7D1A203D1F00C02575 /* verifyPatch.sh */; };
 		934BF05B1817986A00010D82 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934BF05A1817986A00010D82 /* Cocoa.framework */; };
 		934BF0651817986A00010D82 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 934BF0631817986A00010D82 /* InfoPlist.strings */; };
 		934BF0671817986A00010D82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 934BF0661817986A00010D82 /* main.m */; };
@@ -49,6 +58,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		930FA9791A202BD300C092C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		930FA97A1A202BD300C092C2 /* IYLoginItem-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "IYLoginItem-Info.plist"; sourceTree = "<group>"; };
+		930FA97B1A202BD300C092C2 /* IYLoginItem-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IYLoginItem-Prefix.pch"; sourceTree = "<group>"; };
+		930FA97C1A202BD300C092C2 /* NSBundle+LoginItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+LoginItem.h"; sourceTree = "<group>"; };
+		930FA97D1A202BD300C092C2 /* NSBundle+LoginItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+LoginItem.m"; sourceTree = "<group>"; };
+		9340CB601A20301C00C02575 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9340CB631A2036BF00C02575 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		9340CB641A2036BF00C02575 /* STPrivilegedTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPrivilegedTask.h; sourceTree = "<group>"; };
+		9340CB651A2036BF00C02575 /* STPrivilegedTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPrivilegedTask.m; sourceTree = "<group>"; };
+		9340CB7B1A203D1F00C02575 /* edit_rcd_bin.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = edit_rcd_bin.py; sourceTree = "<group>"; };
+		9340CB7C1A203D1F00C02575 /* patch.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = patch.sh; sourceTree = "<group>"; };
+		9340CB7D1A203D1F00C02575 /* verifyPatch.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = verifyPatch.sh; sourceTree = "<group>"; };
 		934BF0571817986A00010D82 /* HeadphoneControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadphoneControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		934BF05A1817986A00010D82 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		934BF05D1817986A00010D82 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -109,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9340CB611A20301C00C02575 /* Security.framework in Frameworks */,
 				934BF0EC1817A73E00010D82 /* IOKit.framework in Frameworks */,
 				934BF05B1817986A00010D82 /* Cocoa.framework in Frameworks */,
 			);
@@ -126,6 +148,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		930FA9771A202BD300C092C2 /* IYLoginItem */ = {
+			isa = PBXGroup;
+			children = (
+				930FA9781A202BD300C092C2 /* InfoPlist.strings */,
+				930FA97A1A202BD300C092C2 /* IYLoginItem-Info.plist */,
+				930FA97B1A202BD300C092C2 /* IYLoginItem-Prefix.pch */,
+				930FA97C1A202BD300C092C2 /* NSBundle+LoginItem.h */,
+				930FA97D1A202BD300C092C2 /* NSBundle+LoginItem.m */,
+			);
+			name = IYLoginItem;
+			path = Libraries/IYLoginItem/IYLoginItem;
+			sourceTree = SOURCE_ROOT;
+		};
+		9340CB621A2036BF00C02575 /* STPrivilegedTask */ = {
+			isa = PBXGroup;
+			children = (
+				9340CB631A2036BF00C02575 /* README */,
+				9340CB641A2036BF00C02575 /* STPrivilegedTask.h */,
+				9340CB651A2036BF00C02575 /* STPrivilegedTask.m */,
+			);
+			name = STPrivilegedTask;
+			path = Libraries/STPrivilegedTask;
+			sourceTree = SOURCE_ROOT;
+		};
+		9340CB7A1A203D1F00C02575 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				9340CB7B1A203D1F00C02575 /* edit_rcd_bin.py */,
+				9340CB7C1A203D1F00C02575 /* patch.sh */,
+				9340CB7D1A203D1F00C02575 /* verifyPatch.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
 		934BF04E1817986A00010D82 = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +204,7 @@
 		934BF0591817986A00010D82 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9340CB601A20301C00C02575 /* Security.framework */,
 				934BF0EB1817A73E00010D82 /* IOKit.framework */,
 				934BF05A1817986A00010D82 /* Cocoa.framework */,
 				934BF0791817986A00010D82 /* XCTest.framework */,
@@ -175,6 +232,9 @@
 				934BF06D1817986A00010D82 /* HPCAppDelegate.m */,
 				934BF06F1817986A00010D82 /* MainMenu.xib */,
 				934BF09118179AC300010D82 /* icon.png */,
+				9340CB7A1A203D1F00C02575 /* Scripts */,
+				9340CB621A2036BF00C02575 /* STPrivilegedTask */,
+				930FA9771A202BD300C092C2 /* IYLoginItem */,
 				934BF0611817986A00010D82 /* Supporting Files */,
 				934BF0BD1817A57F00010D82 /* DDHidLib */,
 			);
@@ -326,9 +386,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9340CB661A2036BF00C02575 /* README in Resources */,
 				934BF0651817986A00010D82 /* InfoPlist.strings in Resources */,
+				9340CB7E1A203D1F00C02575 /* edit_rcd_bin.py in Resources */,
+				930FA97E1A202BD300C092C2 /* InfoPlist.strings in Resources */,
 				934BF09218179AC300010D82 /* icon.png in Resources */,
+				9340CB7F1A203D1F00C02575 /* patch.sh in Resources */,
+				930FA97F1A202BD300C092C2 /* IYLoginItem-Info.plist in Resources */,
 				934BF0731817986A00010D82 /* Images.xcassets in Resources */,
+				9340CB801A203D1F00C02575 /* verifyPatch.sh in Resources */,
 				934BF0E41817A5B300010D82 /* DDHidStandardUsages.plist in Resources */,
 				934BF06B1817986A00010D82 /* Credits.rtf in Resources */,
 				934BF0711817986A00010D82 /* MainMenu.xib in Resources */,
@@ -354,6 +420,7 @@
 				934BF0DB1817A5B300010D82 /* DDHidAppleRemote.m in Sources */,
 				934BF06E1817986A00010D82 /* HPCAppDelegate.m in Sources */,
 				934BF0DD1817A5B300010D82 /* DDHidElement.m in Sources */,
+				9340CB671A2036BF00C02575 /* STPrivilegedTask.m in Sources */,
 				934BF09018179AAC00010D82 /* HPCAppController.m in Sources */,
 				934BF0E21817A5B300010D82 /* DDHidMouse.m in Sources */,
 				934BF0E31817A5B300010D82 /* DDHidQueue.m in Sources */,
@@ -367,6 +434,7 @@
 				934BF0E51817A5B300010D82 /* DDHidUsage.m in Sources */,
 				934BF0DE1817A5B300010D82 /* DDHidEvent.m in Sources */,
 				934BF0DC1817A5B300010D82 /* DDHidDevice.m in Sources */,
+				930FA9801A202BD300C092C2 /* NSBundle+LoginItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +457,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		930FA9781A202BD300C092C2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				930FA9791A202BD300C092C2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		934BF0631817986A00010D82 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -497,6 +573,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libraries/play-button-itunes-patch/iTunes",
+					Play,
+					Button,
+					Patch/Frameworks,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HeadphoneControl/HeadphoneControl-Prefix.pch";
 				INFOPLIST_FILE = "HeadphoneControl/HeadphoneControl-Info.plist";
@@ -510,6 +593,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libraries/play-button-itunes-patch/iTunes",
+					Play,
+					Button,
+					Patch/Frameworks,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HeadphoneControl/HeadphoneControl-Prefix.pch";
 				INFOPLIST_FILE = "HeadphoneControl/HeadphoneControl-Info.plist";

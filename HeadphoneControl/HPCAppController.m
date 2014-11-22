@@ -8,6 +8,8 @@
 
 #import "HPCAppController.h"
 #import "DDHidLib.h"
+#import "NSBundle+LoginItem.h"
+#import "STPrivilegedTask.h"
 
 @interface HPCAppController ()
 @property (nonatomic, retain) NSArray *mikeys;
@@ -47,19 +49,29 @@ typedef enum {
   [statusItem setHighlightMode:YES];
 
   [self _setMikeysEnabled:YES];
-  NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-  [self setRelaunchOnLogin:[[defaults objectForKey:@"relaunchOnLogin"] boolValue]];
+  self.relaunchOnLogin = [[NSBundle mainBundle] isLoginItem];
+
+  if (![self isPatched]) {
+    NSString *resourcePath = [[NSBundle mainBundle] resourcePath];
+    NSString *patchPath = [NSString stringWithFormat:@"%@/patch.sh",resourcePath];
+    STPrivilegedTask *task = [STPrivilegedTask launchedPrivilegedTaskWithLaunchPath:@"/bin/sh"
+                                                                          arguments:@[patchPath, resourcePath]];
+    [task launch];
+    [task waitUntilExit];
+
+    // TODO: Handle Patch Failure
+    NSData *data = [[task outputFileHandle] readDataToEndOfFile];
+    NSLog(@"%@", [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding]);
+  }
 }
 
 - (void)setRelaunchOnLogin:(BOOL)relaunchOnLogin {
   if (relaunchOnLogin) {
-    [NSApp enableRelaunchOnLogin];
+    [[NSBundle mainBundle] addToLoginItems];
   } else {
-    [NSApp disableRelaunchOnLogin];
+    [[NSBundle mainBundle] removeFromLoginItems];
   }
   startAtLoginMenuItem.state = (BOOL)relaunchOnLogin;
-  NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-  [defaults setObject:[NSNumber numberWithBool:relaunchOnLogin] forKey:@"relaunchOnLogin"];
   _relaunchOnLogin = relaunchOnLogin;
 }
 
@@ -100,6 +112,24 @@ typedef enum {
                                          data1:((type << 16) | ((down ? 0xa : 0xb) << 8))
                                          data2:-1];
   CGEventPost(0, event.CGEvent);
+}
+
+- (BOOL)isPatched {
+  NSTask *task = [[NSTask alloc] init];
+  [task setLaunchPath: @"/bin/sh"];
+
+  NSString *patchpath = [NSString stringWithFormat:@"%@/verifyPatch.sh",[[NSBundle mainBundle] resourcePath]];
+  [task setArguments:@[patchpath]];
+
+  NSPipe *pipe = [NSPipe pipe];
+  [task setStandardOutput:pipe];
+  NSFileHandle *file = [pipe fileHandleForReading];
+
+  [task launch];
+
+  NSData *data= [file readDataToEndOfFile];
+  NSString *string = [[NSString alloc] initWithData:data encoding: NSUTF8StringEncoding];
+  return [string isEqualToString:@"Patched\n"];
 }
 
 #pragma mark DDHidAppleMikey Delegate
