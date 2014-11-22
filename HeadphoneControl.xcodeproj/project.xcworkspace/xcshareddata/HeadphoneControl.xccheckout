@@ -26,11 +26,11 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>38B64F689B39CBF666CFCC0345ED0BF865D4E737</key>
-		<string>../../Libraries/play-button-itunes-patch/</string>
+		<string>../../Libraries/play-button-itunes-patch</string>
 		<key>49039C96432B687386926B2AFE2AFF2966A647E8</key>
 		<string>../../Libraries/IYLoginItem</string>
 		<key>5A18CC4105103F3DCAAD74EC93EFD3FF8BB5508A</key>
-		<string>../../Libraries/STPrivilegedTask/</string>
+		<string>../../Libraries/STPrivilegedTask</string>
 		<key>E0B7DFAF0CAC6D1FC8441E431C8D248AF9662DE8</key>
 		<string>../../Libraries/DDHidLib</string>
 		<key>F62EAD773A042DDB9A82D76EB7E8910EC9AA64A4</key>
